@@ -66,6 +66,10 @@ button {
     font: inherit;
 }
 
+button {
+    border: none;
+}
+
 /* Общие блоки */
 
 .container {
@@ -147,7 +151,7 @@ button {
     transition: transform .2s;
 
     &:hover {
-        transform: translateY(-4px);
+        transform: translateY(-2px);
     }
 }
 
@@ -349,4 +353,166 @@ button {
 .copy {
     margin-top: 40px;
     font-size: 13px;
+}
+
+/* 7 Главная */
+
+.hero {
+    position: relative;
+    margin-top: 24px;
+}
+
+/* Слайдер: листается свайпом */
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    border-radius: 32px;
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex: 0 0 100%;
+    min-height: 560px;
+    color: white;
+    scroll-snap-align: start;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(transparent 30%, rgba(13, 12, 52, 0.9));
+    }
+}
+
+.slide img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.slide__text {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+    padding: 48px 48px 90px;
+}
+
+.slide__name {
+    margin: 12px 0;
+    font-size: 56px;
+    line-height: 1;
+}
+
+.dots {
+    position: absolute;
+    right: 48px;
+    bottom: 58px;
+    display: flex;
+    gap: 6px;
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.dots .active {
+    width: 36px;
+    background: var(--accent);
+}
+
+/* Быстрый поиск  */
+
+.quick {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 10px;
+    max-width: 900px;
+    margin: -40px auto 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 999px;
+    box-shadow: var(--shadow);
+}
+
+.quick .input {
+    border: 0;
+    border-radius: 999px;
+    background: var(--bg);
+}
+
+/* .hints {
+
+} */
+
+/* Факты */
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.fact__icon {
+    font-size: 40px;
+}
+
+.fact__num {
+    margin-top: 24px;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.card--orange {
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+}
+
+.card--dark {
+    background: var(--ink);
+    color: #fff;
+    border: 0
+}
+
+/* Карточка отеля */
+
+.hotel {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.hotel .photo {
+    border-radius: 0;
+}
+
+.hotel>.badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.hotel__body {
+    padding: 20px;
+}
+
+/* Поиск  */
+
+.search-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr auto;
+    align-items: end;
+    gap: 12px;
 }

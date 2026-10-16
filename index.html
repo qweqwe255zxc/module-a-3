@@ -31,7 +31,188 @@
             <a href="login.html" class="btn btn--dark btn--sm">Войти</a>
         </div>
     </header>
-    <main class="container section"></main>
+    <main class="container">
+        <section class="hero">
+            <div class="slider">
+                <article class="slide">
+                    <img src="assets/img/hotel-sochi-beach.jpg" alt="Пляж отеля в Сочи">
+                    <div class="slide__text">
+                        <span class="badge">Курортный отель | Сочи, Россия</span>
+                        <h1 class="slide__name">Морская Ривьера</h1>
+                        <p>Первая линия, собственный пляж и бассейн с видом на море.</p>
+                        <br>
+                        <a href="result.html" class="btn">Подробнее</a>
+                    </div>
+                </article>
+                <article class="slide">
+                    <img src="assets/img/hotel-moscow.jpg" alt="Пляж отеля в Сочи">
+                    <div class="slide__text">
+                        <span class="badge">Городской отель | Москва, Россия</span>
+                        <h1 class="slide__name">Высота</h1>
+                        <p>Легендарное здание на набережной и панорамный ресторан.</p>
+                        <br>
+                        <a href="result.html" class="btn">Подробнее</a>
+                    </div>
+                </article>
+                <article class="slide">
+                    <img src="assets/img/city-kazan.jpg" alt="Пляж отеля в Сочи">
+                    <div class="slide__text">
+                        <span class="badge">Бутик-отель | Казань, Россия</span>
+                        <h1 class="slide__name">Кремлевский</h1>
+                        <p>Номера с выходом на арбат, пешком до Кремля.</p>
+                        <br>
+                        <a href="result.html" class="btn">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+            <div class="dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <form action="search.html" class="quick">
+                <input type="search" class="input" list="hints" placeholder="Название отеля или города">
+                <datalist id="hints">
+                    <option value="Сочи"></option>
+                    <option value="Москва"></option>
+                    <option value="Казань"></option>
+                    <option value="Санкт-Петербург"></option>
+                </datalist>
+                <button type="submit" class="btn">Найти</button>
+            </form>
+            <!-- <p class="hints muted">Часто ищут: Москва, Казань</p> -->
+        </section>
+        <section class="section" id="about">
+            <p class="eyebrow">Почему мы</p>
+            <h2 class="title">Бронируйте спокойно</h2>
+            <div class="facts">
+                <div class="card card--orange">
+                    <p class="fact__icon">💰</p>
+                    <p class="fact__num">30%</p>
+                    <h3>Низкие цены</h3>
+                    <p>Честная минимальная цена без скрытых комиссий.</p>
+                </div>
+                <div class="card card--dark">
+                    <p class="fact__icon">🗺️</p>
+                    <p class="fact__num">85</p>
+                    <h3>Отели по всей стране</h3>
+                    <p>Более 12 000 вариантов в 85 регионах.</p>
+                </div>
+                <div class="card">
+                    <p class="fact__icon">🫂</p>
+                    <p class="fact__num">24/7</p>
+                    <h3>Заботливая поддержка 24/7</h3>
+                    <p>Ответим в любое время суток.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <p class="eyebrow">Подборка</p>
+            <h2 class="title">Популярные отели</h2>
+            <div class="grid">
+                <article class="card hotel">
+                    <img src="./assets/img/hotel-sochi-1.jpg" alt="Отель в Сочи" class="photo">
+                    <span class="badge">от 6 900 Р / ночь</span>
+                    <div class="hotel__body stack">
+                        <p class="eyebrow">Сочи</p>
+                        <h3>Морская Ривьера</h3>
+                        <p class="muted">8 (909) 231-14-67</p>
+                        <p class="muted">📍 ул. Приморская, 14</p>
+                    </div>
+                </article>
+                <article class="card hotel">
+                    <img src="./assets/img/hotel-moscow.jpg" alt="Отель в Москве" class="photo">
+                    <span class="badge">от 6 400 Р / ночь</span>
+                    <div class="hotel__body stack">
+                        <p class="eyebrow">Москва</p>
+                        <h3>Высота</h3>
+                        <p class="muted">8 (909) 123-14-67</p>
+                        <p class="muted">📍 ул. Новый Арбат, 16</p>
+                    </div>
+                </article>
+                <article class="card hotel">
+                    <img src="./assets/img/city-kazan.jpg" alt="Отель в Казани" class="photo">
+                    <span class="badge">от 12 700 Р / ночь</span>
+                    <div class="hotel__body stack">
+                        <p class="eyebrow">Казань</p>
+                        <h3>Кремлевский</h3>
+                        <p class="muted">8 (678) 547-14-67</p>
+                        <p class="muted">📍 ул. Кремлевская, 12</p>
+                    </div>
+                </article>
+                <article class="card hotel">
+                    <img src="./assets/img/city-karelia.jpg" alt="Отель в Карелии" class="photo">
+                    <span class="badge">от 12 900 Р / ночь</span>
+                    <div class="hotel__body stack">
+                        <p class="eyebrow">Карелия</p>
+                        <h3>Заднеприводный</h3>
+                        <p class="muted">8 (678) 547-12-67</p>
+                        <p class="muted">📍 ул. Заднеприводная, 12</p>
+                    </div>
+                </article>
+                <article class="card hotel">
+                    <img src="./assets/img/city-krasnaya-polyana.jpg" alt="Отель в Красной поляне" class="photo">
+                    <span class="badge">от 12 700 Р / ночь</span>
+                    <div class="hotel__body stack">
+                        <p class="eyebrow">Красная Поляна</p>
+                        <h3>Краснючий</h3>
+                        <p class="muted">8 (678) 123-14-67</p>
+                        <p class="muted">📍 ул. Краснючая, 12</p>
+                    </div>
+                </article>
+                <article class="card hotel">
+                    <img src="./assets/img/hotel-spb.jpg" alt="Отель в Санкт-Петербурге" class="photo">
+                    <span class="badge">от 12 200 Р / ночь</span>
+                    <div class="hotel__body stack">
+                        <p class="eyebrow">Санкт-Петербург</p>
+                        <h3>Питерский</h3>
+                        <p class="muted">8 (678) 547-14-67</p>
+                        <p class="muted">📍 ул. Солевая, 12</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <p class="eyebrow">Поиск</p>
+            <h2 class="title">Куда поедем?</h2>
+            <form action="search.html" class="card search-form">
+                <div class="field">
+                    <label for="place">Направление/город, страна</label>
+                    <input type="text" id="place" class="input" placeholder="Сочи, Россия">
+                </div>
+                <div class="field">
+                    <label for="date-in">Дата заезда</label>
+                    <input type="date" id="date-in" class="input">
+                </div>
+                <div class="field">
+                    <label for="date-out">Дата отъезда</label>
+                    <input type="date" id="date-out" class="input">
+                </div>
+                <div class="field">
+                    <label for="guest-count">Количество гостей</label>
+                    <input type="number" id="guest-count" class="input" min="1" value="2"">
+                </div>
+                <button type=" submit" class="btn">Найти</button>
+            </form>
+        </section>
+
+        <section class="section">
+            <form action="#" class="card card--dark form">
+                <p class="eyebrow">Рассылка</p>
+                <h2 class="title">Скидки до −40% — первыми узнают подписчики</h2>
+                <div class="row">
+                    <input type="email" class="input" placeholder="Ваш e-mail">
+                    <button type="submit" class="btn">Подписаться</button>
+                </div>
+                <label class="check"><input type="checkbox">Я согласен на обработку персональных данных</label>
+            </form>
+        </section>
+
+
+    </main>
     <footer class="footer">
         <div class="container footer__grid">
 
