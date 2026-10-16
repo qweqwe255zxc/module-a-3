@@ -784,10 +784,16 @@ button {
         color: #000;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
-    .header, .footer, .btn {
+
+    .header,
+    .footer,
+    .btn {
         display: none;
     }
-    .card, .badge, .stars {
+
+    .card,
+    .badge,
+    .stars {
         border: 1px solid #999;
         background: #fff;
         color: #333;
