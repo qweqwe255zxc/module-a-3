@@ -31,7 +31,165 @@
             <a href="login.html" class="btn btn--dark btn--sm">Войти</a>
         </div>
     </header>
-    <main class="container"></main>
+    <main class="container">
+        <section class="section">
+            <h1 class="title">Поиск отелей</h1>
+            <form action="search.html" class="card search-form">
+                <div class="field">
+                    <label for="place">Направление/город, страна</label>
+                    <input type="text" id="place" class="input" placeholder="Сочи, Россия">
+                </div>
+                <div class="field">
+                    <label for="date-in">Дата заезда</label>
+                    <input type="date" id="date-in" class="input">
+                </div>
+                <div class="field">
+                    <label for="date-out">Дата отъезда</label>
+                    <input type="date" id="date-out" class="input">
+                </div>
+                <div class="field">
+                    <label for="guest-count">Количество гостей</label>
+                    <input type="number" id="guest-count" class="input" min="1" value="2"">
+                </div>
+                <button type=" submit" class="btn">Найти</button>
+            </form>
+        </section>
+
+        <section class="layout">
+            <form action="#" class="card">
+                <div class="filter">
+                    <h3>Показывать</h3>
+                    <label class="check"><input type="radio" name="view" id="">Списком</label>
+                    <label class="check"><input type="radio" name="view" id="">На карте</label>
+                </div>
+                <div class="filter">
+                    <h3>Избранное</h3>
+                    <label class="check"><input type="checkbox" name="f"> Только избранное</label>
+                </div>
+                <div class="filter">
+                    <h3>Сортировка</h3>
+                    <select name="" id="" class="input">
+                        <option value="Сначала дешевые">Сначала дешевые</option>
+                        <option value="Сначала дорогие">Сначала дорогие</option>
+                        <option value="По рейтингу">По рейтингу</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <h3>Цена за ночь, ₽</h3>
+                    <div class="form__row">
+                        <input type="number" class="input" placeholder="От" aria-label="Цена от">
+                        <input type="number" class="input" placeholder="До" aria-label="Цена до">
+                    </div>
+                </div>
+                <div class="filter">
+                    <h3>Тип размещеная</h3>
+                    <label class="check"><input type="checkbox" name="r">Отель</label>
+                    <label class="check"><input type="checkbox" name="r">Аппартаменты</label>
+                    <label class="check"><input type="checkbox" name="r">Хостел</label>
+                    <label class="check"><input type="checkbox" name="r">Гостевой дом</label>
+                </div>
+                <div class="filter">
+                    <h3>Расположение (от центра)</h3>
+                    <label class="check"><input type="radio" name="rasp">До 3 км</label>
+                    <label class="check"><input type="radio" name="rasp">До 1 км</label>
+                    <label class="check"><input type="radio" name="rasp">Не важно</label>
+                </div>
+                <div class="filter">
+                    <h3>Услуги и удобства (в отеле/номера)</h3>
+                    <label class="check"><input type="checkbox" name="rasp">Бассейн</label>
+                    <label class="check"><input type="checkbox" name="rasp">Парковка</label>
+                    <label class="check"><input type="checkbox" name="rasp">Wi-FI</label>
+                </div>
+                <div class="filter">
+                    <h3>Особенности размещения</h3>
+                    <label class="check"><input type="checkbox" name="osob">С животными</label>
+                    <label class="check"><input type="checkbox" name="osob">С детьми</label>
+                    <label class="check"><input type="checkbox" name="osob">Для групп</label>
+                </div>
+                <div class="filter">
+                    <h3>Питани</h3>
+                    <label class="check"><input type="checkbox" name="pit">Завтрак </label>
+                    <label class="check"><input type="checkbox" name="pit">Полупансион</label>
+                    <label class="check"><input type="checkbox" name="pit">Все включено</label>
+                </div>
+                <div class="filter">
+                    <h3>Звёзды</h3>
+                    <select class="input" name="" id="">
+                        <option value="⭐️⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️⭐️</option>
+                        <option value="⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️</option>
+                        <option value="⭐️⭐️⭐️">⭐️⭐️⭐️</option>
+                        <option value="⭐️⭐️">⭐️⭐️</option>
+                        <option value="⭐️">⭐️</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <h3>Оценка по отзывам</h3>
+                    <div class="form__row">
+                        <input type="number" class="input" placeholder="От" aria-label="От">
+                        <input type="number" class="input" placeholder="До" aria-label="До">
+                    </div>
+                </div>
+                <button type=" submit" class="btn">Применить</button>
+            </form>
+            <div class="form">
+                <article class="card booking result">
+                    <img src="assets/img/hotel-spb.jpg" alt="Отель в Санкт-Петербурге" class="photo">
+                    <div class="stack">
+                        <p class="muted">Россия, Сочи, Центральный район</p>
+                        <h2>«Морская Ривьера» <span class="stars"></span></h2>
+                        <p>Первая линия, свой пляж и бассейн.</p>
+                        <p class="muted">📍 ул. Приморская, 14, Сочи · 0.8 км от центра</p>
+                        <p class="muted">📞 8-862-200-10-20</p>
+                        <p title="Удобства">Удобства: Wi-Fi</p>
+                    </div>
+                    <div class="stack">
+                        <span class="pill pill--ok">⭐️⭐️⭐️⭐️ | 9.2 / 10</span>
+                        <p>от <b>6 900 ₽</b> за ночь</p>
+                        <a href="result.html" class="btn btn--sm">Выбрать номер</a>
+                    </div>
+                </article>
+                <article class="card booking result">
+                    <img src="assets/img/hotel-spb.jpg" alt="Отель в Санкт-Петербурге" class="photo">
+                    <div class="stack">
+                        <p class="muted">Россия, Сочи, Центральный район</p>
+                        <h2>«Морская Ривьера» <span class="stars"></span></h2>
+                        <p>Первая линия, свой пляж и бассейн.</p>
+                        <p class="muted">📍 ул. Приморская, 14, Сочи · 0.8 км от центра</p>
+                        <p class="muted">📞 8-862-200-10-20</p>
+                        <p title="Удобства">Удобства: Wi-Fi</p>
+                    </div>
+                    <div class="stack">
+                        <span class="pill pill--ok">⭐️⭐️⭐️⭐️ | 9.2 / 10</span>
+                        <p>от <b>6 900 ₽</b> за ночь</p>
+                        <a href="result.html" class="btn btn--sm">Выбрать номер</a>
+                    </div>
+                </article>
+                <article class="card booking result">
+                    <img src="assets/img/hotel-spb.jpg" alt="Отель в Санкт-Петербурге" class="photo">
+                    <div class="stack">
+                        <p class="muted">Россия, Сочи, Центральный район</p>
+                        <h2>«Морская Ривьера» <span class="stars"></span></h2>
+                        <p>Первая линия, свой пляж и бассейн.</p>
+                        <p class="muted">📍 ул. Приморская, 14, Сочи · 0.8 км от центра</p>
+                        <p class="muted">📞 8-862-200-10-20</p>
+                        <p title="Удобства">Удобства: Wi-Fi</p>
+                    </div>
+                    <div class="stack">
+                        <span class="pill pill--ok">⭐️⭐️⭐️⭐️ | 9.2 / 10</span>
+                        <p>от <b>6 900 ₽</b> за ночь</p>
+                        <a href="result.html" class="btn btn--sm">Выбрать номер</a>
+                    </div>
+                </article>
+
+                <nav class="pages">
+                    <a href="#" class="active">1</a>
+                    <a href="#" class="">2</a>
+                    <a href="#" class="">3</a>
+                    <a href="#" class="">10</a>
+                </nav>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container footer__grid">
 
