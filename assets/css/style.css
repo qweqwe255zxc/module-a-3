@@ -15,7 +15,7 @@
     --line: rgb(255, 226, 198);
     --ok: rgb(31, 120, 52);
     --ok-muted: rgb(218, 254, 218);
-    --wait: rgb(184, 117, 0);
+    --wait: rgb(223, 163, 58);
     --wait-muted: rgb(255, 240, 213);
     --error: rgb(207, 52, 52);
     --error-muted: rgb(255, 225, 225);
@@ -167,7 +167,13 @@ button {
 .btn--light {
     background: #fff;
     color: var(--ink);
-    border: 1px solid var(--line);
+    border: 1px solid var(--ink);
+}
+
+.btn--no {
+    background-color: var(--error-muted);
+    color: var(--error);
+    border: 1px solid var(--error);
 }
 
 .btn--sm {
@@ -533,6 +539,52 @@ button {
 .narrow a,
 .narrow h1 {
     text-align: center;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.big {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.group {
+    margin-top: 24px;
+    border-radius: var(--radius);
+    padding: 24px;
+}
+
+.group .grid {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 16px;
+}
+
+.group--ok {
+    background: var(--ok-muted);
+}
+
+.group--wait {
+    background: var(--wait-muted);
+    border: 2px dashed var(--wait)
+}
+
+.booking {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
 }
 
 .pass-check {

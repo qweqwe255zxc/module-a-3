@@ -31,7 +31,115 @@
             <a href="login.html" class="btn btn--dark btn--sm">Войти</a>
         </div>
     </header>
-    <main class="container"></main>
+    <main class="container">
+        <section class="section">
+            <h1 class="title">Личный Кабинет</h1>
+            <div class="stats">
+                <div class="card card--orange" id="favorite">
+                    <p class="big">6</p>
+                    <p>Избранных отелей</p>
+                </div>
+                <div class="card">
+                    <p class="big">4</p>
+                    <p>Забронированных отелей</p>
+                </div>
+                <div class="card">
+                    <p class="big">12-16.07</p>
+                    <p>Ближайшие даты проживания</p>
+                </div>
+                <div class="card">
+                    <p class="big">27 400 Р</p>
+                    <p>Стоимость ближайшего проживания</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="title">Мои данные</h2>
+            <div class="card ">
+                <div class="data-row">
+                    <p><span class="muted">ФИО:</span> <br>Бакушин Андрей Дмитриевич</p>
+                    <button class="btn btn--light btn--sm">Изменить</button>
+                </div>
+                <div class="data-row">
+                    <p><span class="muted">Паспорт:</span> <br>12 34 567890</p>
+                    <button class="btn btn--light btn--sm">Изменить</button>
+                </div>
+                <div class="data-row">
+                    <p><span class="muted">Телефон:</span> <br>8 (123) 456-78-90</p>
+                    <button class="btn btn--light btn--sm">Изменить</button>
+                </div>
+                <div class="data-row">
+                    <p><span class="muted">E-mail:</span> <br>example@.email.ru</p>
+                    <button class="btn btn--light btn--sm">Изменить</button>
+                </div>
+                <p class="data-row" id="notifications">Отмена: бесплатно до 05.07.2026, после — 6 900 ₽</p>
+            </div>
+        </section>
+
+        <section class="section" id="bookings">
+            <h2 class="title">Бронирования</h2>
+            <div class="group group--ok">
+                <p class="badge badge--ok">Подтверждено</p>
+                <div class="grid">
+                    <article class="card booking">
+                        <img src="assets/img/hotel-sochi-1.jpg" alt="Отель в Сочи" class="photo">
+                        <div class="stack">
+                            <h3>Сочи, Россия</h3>
+                            <p>12.07 - 16.07.2026</p>
+                            <p class="muted">Номер с видом на море</p>
+                            <div class="row">
+                                <button class="btn btn--light btn--sm">Редактировать</button>
+                                <button class="btn btn--no btn--sm">Отменить</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card booking">
+                        <img src="assets/img/city-kazan.jpg" alt="Отель в Сочи" class="photo">
+                        <div class="stack">
+                            <h3>Казань, Россия</h3>
+                            <p>20.09 - 28.09.2026</p>
+                            <p class="muted">Группа 12 человек</p>
+                            <div class="row">
+                                <button class="btn btn--light btn--sm">Редактировать</button>
+                                <button class="btn btn--no btn--sm">Отменить</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="group group--wait">
+                <p class="badge badge--wait">Не подтверждено</p>
+                <div class="grid">
+                    <article class="card booking">
+                        <img src="assets/img/hotel-spb.jpg" alt="Отель в Санкт-Петербурге" class="photo">
+                        <div class="stack">
+                            <h3>Санкт-Петербург, Россия</h3>
+                            <p>02.08 — 05.08.2026</p>
+                            <p class="muted">Поздний заезд</p>
+                            <div class="row">
+                                <button class="btn btn--light btn--sm">Редактировать</button>
+                                <button class="btn btn--no btn--sm">Отменить</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card booking">
+                        <img src="assets/img/city-karelia.jpg" alt="Отель в Карелии" class="photo">
+                        <div class="stack">
+                            <h3>Карелия, Россия</h3>
+                            <p>14.10 — 18.10.2026</p>
+                            <p class="muted">Домик у воды</p>
+                            <div class="row">
+                                <button class="btn btn--light btn--sm">Редактировать</button>
+                                <button class="btn btn--no btn--sm">Удалить</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container footer__grid">
 
