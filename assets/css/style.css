@@ -653,3 +653,13 @@ button {
     background: var(--ink);
     color: #fff;
 }
+
+.gallary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card.description {
+    height: 100%;
+}
