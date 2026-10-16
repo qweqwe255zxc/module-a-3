@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Путешественник - отели по всей России</title>
+    <title>Путешественник - Авторизация</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -26,12 +26,28 @@
                 <a href="profile.html#favorites">Избранное</a>
                 <a href="profile.html#bookings">Бронирования</a>
                 <a href="profile.html#bookings">Мои заказы <span class="count">2</span></a>
-                <a href="profile.html#notifications"><span class="bell">🔔</span>Уведомления</a>
+                <a href="profile.html#notifications"><span class="bell">🔔</span> Уведомления</a>
             </nav>
             <a href="login.html" class="btn btn--dark btn--sm">Войти</a>
         </div>
     </header>
-    <main class="container section"></main>
+    <main class="container">
+        <form action="#" class="card form narrow">
+            <h1 class="title">Вход</h1>
+            <div class="field">
+                <label for="email">E-mail *</label>
+                <input class="input" type="email" name="email" id="email" placeholder="example@email.ru">
+            </div>
+            <div class="field error">
+                <label for="password">Пароль *</label>
+                <input class="input" type="password" name="password" id="password">
+                <p class="error-text">Неверный e-mail или пароль</p>
+            </div>
+            <button type="submit" class="btn">Войти</button>
+            <a href="#" class="btn btn--light">Забыли пароль?</a>
+            <a href="register.html">Еще нет аккаунта? Зарегистрироваться</a>
+        </form>
+    </main>
     <footer class="footer">
         <div class="container footer__grid">
 

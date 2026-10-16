@@ -14,11 +14,11 @@
     --muted: rgb(88, 88, 125);
     --line: rgb(255, 226, 198);
     --ok: rgb(31, 120, 52);
-    --ok-muted: rgb(206, 249, 206);
+    --ok-muted: rgb(218, 254, 218);
     --wait: rgb(184, 117, 0);
-    --wait-muted: rgb(255, 231, 190);
+    --wait-muted: rgb(255, 240, 213);
     --error: rgb(207, 52, 52);
-    --error-muted: rgb(255, 206, 206);
+    --error-muted: rgb(255, 225, 225);
     --radius-sm: 12px;
     --radius: 20px;
     --shadow: 0 16px 40px -16px rgba(15, 27, 61, .3);
@@ -64,6 +64,10 @@ select,
 textarea,
 button {
     font: inherit;
+}
+
+textarea {
+    resize: vertical;
 }
 
 button {
@@ -149,6 +153,7 @@ button {
     cursor: pointer;
     font-weight: 700;
     transition: transform .2s;
+    text-align: center;
 
     &:hover {
         transform: translateY(-2px);
@@ -213,6 +218,7 @@ button {
     display: grid;
     gap: 16px;
     grid-template-columns: 1fr 1fr;
+    align-items: start;
 }
 
 .field {
@@ -515,4 +521,30 @@ button {
     grid-template-columns: 2fr 1fr 1fr 1fr auto;
     align-items: end;
     gap: 12px;
+}
+
+
+/* 8. Кабинеты и формы */
+.narrow {
+    max-width: 560px;
+    margin: 48px auto 0;
+}
+
+.narrow a,
+.narrow h1 {
+    text-align: center;
+}
+
+.pass-check {
+    display: inline-block;
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.pass {
+    display: none;
+}
+
+#make-profile:checked~.pass {
+    display: grid;
 }

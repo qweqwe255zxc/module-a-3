@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешественник - Новый Отель</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <a href="tel:88007775577">8 (800) 777-55-77</a>
+                <a href="mailto:hotel@hotel.ru">Задать вопрос</a>
+            </div>
+        </div>
+        <div class="container header__main">
+            <a href="index.html" class="logo"><img src="./assets/img/logo.svg" alt="Путешественник"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu" class="burger">≡</label>
+            <nav class="nav">
+                <a href="search.html">Поиск</a>
+                <a href="profile.html">Личный кабинет</a>
+                <a href="profile.html#favorites">Избранное</a>
+                <a href="profile.html#bookings">Бронирования</a>
+                <a href="profile.html#bookings">Мои заказы <span class="count">2</span></a>
+                <a href="profile.html#notifications"><span class="bell">🔔</span> Уведомления</a>
+            </nav>
+            <a href="login.html" class="btn btn--dark btn--sm">Войти</a>
+        </div>
+    </header>
+    <main class="container">
+        <form action="#" class="card form narrow">
+            <h1 class="title">Добавление отеля</h1>
+            <div class="form__row">
+                <div class="field error">
+                    <label for="phone">Телефон отеля *</label>
+                    <input type="tel" class="input" id="phone" value="8(920)">
+                    <p class="error-text">Некорректный номер телефона</p>
+                </div>
+                <div class="field">
+                    <label for="email">E-mail отеля *</label>
+                    <input type="email" class="input" id="email" placeholder="hotel@hotel.ru">
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="field ">
+                    <label for="company">Юридическое название *</label>
+                    <input type="text" class="input" id="company" placeholder='ООО "Ривьера"'>
+                </div>
+                <div class="field error">
+                    <label for="inn">ИНН *</label>
+                    <input type="email" class="input" id="inn" value="2319">
+                    <p class="error-text">ИНН - 10 или 12 цифр</p>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="field ">
+                    <label for="type">Вид отеля *</label>
+                    <select name="type" id="type" class="input">
+                        <option value="Отель">Отель</option>
+                        <option value="Аппартаменты">Аппартаменты</option>
+                        <option value="Гостевой дом">Гостевой дом</option>
+                        <option value="Хостел">Хостел</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="stars">Количество звезд *</label>
+                    <select id="stars" class="input">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option selected>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__row">
+
+                <div class="field ">
+                    <label for="country">Страна *</label>
+                    <input type="text" class="input" id="country" placeholder="Россия">
+                </div>
+                <div class="field">
+                    <label for="city">Город *</label>
+                    <input type="text" class="input" id="city" placeholder="Нахабино">
+                </div>
+            </div>
+            <div class="field">
+                <label for="neighborhood">Район *</label>
+                <input type="text" class="input" id="neighborhood" placeholder="Школьная ул.">
+            </div>
+            <div class="field">
+                <label for="photos">Фото отеля и номеров</label>
+                <input type="file" name="" id="photos" class="input">
+                <input type="file" name="" id="photos" class="input">
+                <input type="file" name="" id="photos" class="input">
+            </div>
+            <div class="field error">
+                <label for="about">Дополнительная информация *</label>
+                <textarea id="about" class="input" rows="4"></textarea>
+                <p class="error-text">Добавьте описание отеля</p>
+            </div>
+            <div class="field">
+                <label>Удобства</label>
+                <div class="row">
+                    <label class="check"><input type="checkbox" checked>Wi-Fi</label>
+                    <label class="check"><input type="checkbox">Бассейн</label>
+                    <label class="check"><input type="checkbox">Завтрак</label>
+                    <label class="check"><input type="checkbox" checked>Парковка</label>
+                </div>
+            </div>
+            <div class="">
+                <input type="checkbox" name="" id="make-profile">
+                <label class="pass-check" for="make-profile">
+                    Создать профиль сотрудника отеля
+                </label>
+                <div class="form__row pass">
+                    <div class="field error">
+                        <label for="password">Пароль *</label>
+                        <input class="input" type="password" name="password" id="password">
+                        <p class="error-text">Пароли не совпадают</p>
+                    </div>
+                    <div class="field">
+                        <label for="rep-password">Повторите пароль *</label>
+                        <input class="input" type="password" name="rep-password" id="rep-password">
+                    </div>
+                </div>
+            </div>
+            <label class="check"><input type="checkbox" name="" id="">Я согласен на обработку персональных
+                данных</label>
+            <button type="submit" class="btn">Отправить на модерацию</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="container footer__grid">
+
+            <div>
+                <h3>Путешественник</h3>
+                <p>Бронирование отелей по всей России</p>
+            </div>
+
+            <ul id="contacts">
+                <h3>Контакты</h3>
+                <li> <a href="tel:88007775577">8 (800) 777-55-77</a></li>
+                <li> <a href="mailto:hotel@hotel.ru">Задать вопрос</a></li>
+            </ul>
+            <ul>
+                <h3>Надо придумать</h3>
+                <li><a href="search.html">Клиентам</a></li>
+                <li><a href="add.html">Партнерам</a></li>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <nav>
+                <h3>Навигация</h3>
+                <ul class="footer__nav">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                    <li><a href="login.html">Авторизация</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                    <li><a href="search.html">Поиск</a></li>
+                    <li><a href="mailto:hotel@hotel.ru">Задать вопрос</a></li>
+
+                    <li><a href="profile.html#favorites">Избранное</a></li>
+                    <li><a href="profile.html#bookings">Бронирования</a></li>
+                    <li><a href="profile.html#notificatons">Уведомления</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="container copy">© 2027 Путешественник</p>
+    </footer>
+</body>
+
+</html>

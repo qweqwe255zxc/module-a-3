@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешественник - Регистрация</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <a href="tel:88007775577">8 (800) 777-55-77</a>
+                <a href="mailto:hotel@hotel.ru">Задать вопрос</a>
+            </div>
+        </div>
+        <div class="container header__main">
+            <a href="index.html" class="logo"><img src="./assets/img/logo.svg" alt="Путешественник"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu" class="burger">≡</label>
+            <nav class="nav">
+                <a href="search.html">Поиск</a>
+                <a href="profile.html">Личный кабинет</a>
+                <a href="profile.html#favorites">Избранное</a>
+                <a href="profile.html#bookings">Бронирования</a>
+                <a href="profile.html#bookings">Мои заказы <span class="count">2</span></a>
+                <a href="profile.html#notifications"><span class="bell">🔔</span> Уведомления</a>
+            </nav>
+            <a href="login.html" class="btn btn--dark btn--sm">Войти</a>
+        </div>
+    </header>
+    <main class="container">
+        <form action="#" class="card form narrow">
+            <h1 class="title">Регистрация</h1>
+            <div class="field error">
+                <label for="email">E-mail *</label>
+                <input class="input" type="email" name="email" id="email" placeholder="example@email.ru">
+                <p class="error-text">Некорректный e-mail</p>
+            </div>
+            <div class="form__row">
+                <div class="field error">
+                    <label for="name">Имя *</label>
+                    <input class="input" type="text" name="name" id="name">
+                    <p class="error-text">Обязательное поле</p>
+                </div>
+                <div class="field">
+                    <label for="surname">Фамилия</label>
+                    <input class="input" type="text" name="surname" id="surname">
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="field">
+                    <label for="phone">Телефон *</label>
+                    <input class="input" type="tel" name="phone" id="phone">
+                </div>
+                <div class="field">
+                    <label for="birth_date">Дата рождения</label>
+                    <input class="input" type="date" name="birth_date" id="birth_date">
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="field error">
+                    <label for="password">Пароль *</label>
+                    <input class="input" type="password" name="password" id="password">
+                    <p class="error-text">Пароли не совпадают</p>
+                </div>
+                <div class="field">
+                    <label for="rep-password">Повторите пароль *</label>
+                    <input class="input" type="password" name="rep-password" id="rep-password">
+                </div>
+            </div>
+            <button type="submit" class="btn">Зарегистрироваться</button>
+            <a href="login.html">Уже есть аккаунт? Войти</a>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="container footer__grid">
+
+            <div>
+                <h3>Путешественник</h3>
+                <p>Бронирование отелей по всей России</p>
+            </div>
+
+            <ul id="contacts">
+                <h3>Контакты</h3>
+                <li> <a href="tel:88007775577">8 (800) 777-55-77</a></li>
+                <li> <a href="mailto:hotel@hotel.ru">Задать вопрос</a></li>
+            </ul>
+            <ul>
+                <h3>Надо придумать</h3>
+                <li><a href="search.html">Клиентам</a></li>
+                <li><a href="add.html">Партнерам</a></li>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <nav>
+                <h3>Навигация</h3>
+                <ul class="footer__nav">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                    <li><a href="login.html">Авторизация</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                    <li><a href="search.html">Поиск</a></li>
+                    <li><a href="mailto:hotel@hotel.ru">Задать вопрос</a></li>
+
+                    <li><a href="profile.html#favorites">Избранное</a></li>
+                    <li><a href="profile.html#bookings">Бронирования</a></li>
+                    <li><a href="profile.html#notificatons">Уведомления</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="container copy">© 2027 Путешественник</p>
+    </footer>
+</body>
+
+</html>
