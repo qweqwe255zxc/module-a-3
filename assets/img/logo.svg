@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="44" viewBox="0 0 220 44">
+  <rect width="44" height="44" rx="12" fill="#2F5BEA"/>
+  <path d="M34 10 8 21l10 3.5L22 35z" fill="#fff"/>
+  <path d="M18 24.5 34 10" stroke="#FF7A30" stroke-width="2"/>
+  <text x="54" y="28" font-family="Montserrat, Arial" font-size="18" font-weight="800" fill="#0F1B3D">Путешественник</text>
+</svg>
