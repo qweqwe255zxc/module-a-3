@@ -600,3 +600,7 @@ button {
 #make-profile:checked~.pass {
     display: grid;
 }
+
+.order img {
+    height: 100%;
+}

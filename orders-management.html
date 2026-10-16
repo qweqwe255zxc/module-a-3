@@ -31,7 +31,75 @@
             <a href="login.html" class="btn btn--dark btn--sm">Войти</a>
         </div>
     </header>
-    <main class="container"></main>
+    <main class="container">
+        <section class="section form">
+            <form action="#" class="">
+                <h1 class="title">Управление бронированиями</h1>
+                <div class="row">
+                    <select class="input" id="">
+                        <option value="">По дате: сначала новые</option>
+                        <option value="">По дате: сначала старые</option>
+                    </select>
+                    <select class="input" id="">
+                        <option value="">По дате: на модерации</option>
+                        <option value="">По дате: подтверждено</option>
+                    </select>
+                </div>
+            </form>
+
+            <article class="card booking order">
+                <img src="assets/img/hotel-spb.jpg" alt="Отель в Санкт-Петербурге" class="photo">
+                <div class="stack">
+                    <span class="badge badge--wait">На модерации</span>
+                    <p class="muted">Городской отель | <span class="stars">⭐️⭐️⭐️⭐️</span> | Рейтинг 9.2 / 10 </p>
+                    <h2>Отечество</h2>
+                    <p class="muted">Санкт-Петербург, Россия</p>
+                    <p>Телефон: 8-862-200-10-20 | Почта: otechestvo@hotel.ru</p>
+                    <p class="muted">Свой пляж и бассейн.</p>
+                    <p>Гость: Бакушин Андрей Дмитриеивч | example@email.ru</p>
+                    <p>Даты проживания: 02.08 — 05.08.2026</p>
+                    <div class="row">
+                        <label class="check"><input type="radio" name="status1"> Подтверждено</label>
+                        <label class="check"><input type="radio" name="status1"> Не подтверждено</label>
+                    </div>
+                </div>
+            </article>
+            <article class="card booking order">
+                <img src="assets/img/hotel-sochi-2.jpg" alt="Отель в Сочи" class="photo">
+                <div class="stack">
+                    <span class="badge badge--ok">Подтверждено</span>
+                    <p class="muted">Курортный отель | <span class="stars">⭐️⭐️⭐️</span> | Рейтинг 7 / 10 </p>
+                    <h2>Морская Ривьера</h2>
+                    <p class="muted">Сочи, Россия</p>
+                    <p>Телефон: 8-862-123-10-20 | Почта: riviera@hotel.ru</p>
+                    <p class="muted">Свой пляж и бассейн.</p>
+                    <p>Гость: Бакушин Андрей Дмитриеивч | example@email.ru</p>
+                    <p>Даты проживания: 10.08 — 16.08.2026</p>
+                    <div class="row">
+                        <label class="check"><input type="radio" name="status1" checked> Подтверждено</label>
+                        <label class="check"><input type="radio" name="status1"> Не подтверждено</label>
+                    </div>
+                </div>
+            </article>
+            <article class="card booking order">
+                <img src="assets/img/room-1.jpg" alt="Отель в Митино" class="photo">
+                <div class="stack">
+                    <span class="badge badge--no">Не подтверждено</span>
+                    <p class="muted">Хостел | <span class="stars">⭐️</span> | Рейтинг 0 / 10 </p>
+                    <h2>Приют</h2>
+                    <p class="muted">Митино, Россия</p>
+                    <p>Телефон: 8-862-123-10-20 | Почта: priyut@hotel.ru</p>
+                    <p class="muted">Живем все вместе, моемся тоже.</p>
+                    <p>Гость: Бакушин Андрей Дмитриеивч | example@email.ru</p>
+                    <p>Даты проживания: 20.08 — 27.08.2026</p>
+                    <div class="row">
+                        <label class="check"><input type="radio" name="status1"> Подтверждено</label>
+                        <label class="check"><input type="radio" name="status1" checked>Не подтверждено</label>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container footer__grid">
 
